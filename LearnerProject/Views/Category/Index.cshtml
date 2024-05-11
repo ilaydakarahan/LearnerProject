@@ -1,0 +1,33 @@
+﻿@model List<LearnerProject.Models.Entities.Category>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h3>Kategoriler</h3>
+@{ 
+    int count = 0;
+}
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>#</th>
+        <th>Kategori Adı</th>
+        <th>İşlemler</th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <td>@count</td>
+            <td>@item.CategoryName</td>
+            <td>
+                <a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-outline-danger">Sil</a>
+                <a href="/Category/UpdateCategory/@item.CategoryId" class="btn btn-outline-info">Güncelle</a>
+            </td>
+        </tr>
+    }
+</table>
+<br />
+<a href="/Category/AddCategory" class="btn btn-outline-primary">Yeni Kategori Ekle</a>

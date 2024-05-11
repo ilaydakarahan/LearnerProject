@@ -1,0 +1,19 @@
+﻿@model LearnerProject.Models.Entities.Category
+@{
+    ViewBag.Title = "AddCategory";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+<br />
+<h3>Kategori Ekleme Sayfası</h3>
+
+<form method="post">
+    <label>Kategori Adı</label>
+    @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
+    <br />
+    <label>İkon</label>
+    @Html.TextBoxFor(x=>x.Icon, new {@class="form-control"})
+    <br />
+    <button class="btn btn-outline-primary">Kaydet</button>
+    <!--httppost methodu bu sayfadaki bu üstteki butona basınca çalışır sadece.
+        HTTPGET ise sadece bu tasarım sayfasını yükler -->
+</form>

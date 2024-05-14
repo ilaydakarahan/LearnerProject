@@ -1,0 +1,43 @@
+﻿@model List<LearnerProject.Models.Entities.Course>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+<br />
+<br />
+<h3>Kurslar</h3>
+@{
+    int count = 0;
+}
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>#</th>
+        <th>Resim</th>
+        <th>Kurs Adı</th>
+        <th>Açıklama</th>
+        <th>Fiyat</th>
+        <th>Kategori</th>
+        <th>İşlemler</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <th>@count</th>
+            <td><img src="@item.ImageUrl" style="height:50px;width:50px" /> </td>
+            <td>@item.CourseName</td>
+            <td>@(item.Description.Length>50 ? item.Description.Substring(0,50) +"..." : item.Description )</td>   <!--Turnery operatörü bu if-else'in kısaltması yani-->
+            <td>@item.Price ₺</td>
+            <td>@item.Category.CategoryName</td>
+            <td>
+                <a href="/Course/AddCourse/@item.CourseId" class="btn btn-outline-danger">
+                    <i class="fa fa-trash"></i> Sil </a>
+                <a href="/Course/UpdateCourse/@item.CourseId" class="btn btn-outline-info">
+                    <i class="fa fa-pen"></i> Güncelle </a>
+            </td>
+        </tr>
+    }
+</table>
+<br />
+<a href="/AdminCourse/AddCourse" class="btn btn-outline-primary">Yeni Kurs Ekle</a>

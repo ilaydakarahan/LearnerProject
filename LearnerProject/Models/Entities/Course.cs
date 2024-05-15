@@ -15,9 +15,12 @@ namespace LearnerProject.Models.Entities
         //her class bir tablo. Bunların birbiriyle ilişkili olması için alttaki gibi yazılır.
         //ıd olan hep üste yazılmalı.
         public int CategoryId { get; set; }
+        public int? TeacherId { get; set; }
+        public virtual Teacher Teacher { get; set; }
         public virtual Category Category { get; set; }  //VİRTUAL kelimesi sadece .net' de var. .net Core da yok
 
         public List<Review> Reviews { get; set; }
         public List<CourseRegister> CourseRegisters { get; set; }
+        public List<CourseVideo> CourseVideos { get; set; }
     }
 }

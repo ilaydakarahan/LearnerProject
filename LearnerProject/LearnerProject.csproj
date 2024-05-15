@@ -133,6 +133,9 @@
     <Compile Include="Controllers\AdminCourseController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TeacherCourseController.cs" />
+    <Compile Include="Controllers\TeacherLayoutController.cs" />
+    <Compile Include="Controllers\TeacherLoginController.cs" />
     <Compile Include="Controllers\UILayoutController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -145,6 +148,14 @@
     <Compile Include="Migrations\202405111242134_init.designer.cs">
       <DependentUpon>202405111242134_init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202405151042091_mig_teacher_add.cs" />
+    <Compile Include="Migrations\202405151042091_mig_teacher_add.designer.cs">
+      <DependentUpon>202405151042091_mig_teacher_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405151315300_mig_coursevideo_add.cs" />
+    <Compile Include="Migrations\202405151315300_mig_coursevideo_add.designer.cs">
+      <DependentUpon>202405151315300_mig_coursevideo_add.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Context\LearnerContext.cs" />
     <Compile Include="Models\Entities\About.cs" />
@@ -153,9 +164,11 @@
     <Compile Include="Models\Entities\Classroom.cs" />
     <Compile Include="Models\Entities\Course.cs" />
     <Compile Include="Models\Entities\CourseRegister.cs" />
+    <Compile Include="Models\Entities\CourseVideo.cs" />
     <Compile Include="Models\Entities\FAQ.cs" />
     <Compile Include="Models\Entities\Review.cs" />
     <Compile Include="Models\Entities\Student.cs" />
+    <Compile Include="Models\Entities\Teacher.cs" />
     <Compile Include="Models\Entities\Testimonial.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -491,10 +504,14 @@
     <Content Include="Views\AdminCourse\AddCourse.cshtml" />
     <Content Include="Views\AdminCourse\UpdateCourse.cshtml" />
     <Content Include="Views\AdminDashboard\Index.cshtml" />
+    <Content Include="Views\TeacherLayout\Index.cshtml" />
+    <Content Include="Views\TeacherCourse\Index.cshtml" />
+    <Content Include="Views\TeacherLogin\Index.cshtml" />
+    <Content Include="Views\TeacherCourse\AddCourse.cshtml" />
+    <Content Include="Views\TeacherCourse\UpdateCourse.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Course\" />
     <Folder Include="Views\Default\" />
   </ItemGroup>
   <ItemGroup>
@@ -530,6 +547,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202405111242134_init.resx">
       <DependentUpon>202405111242134_init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405151042091_mig_teacher_add.resx">
+      <DependentUpon>202405151042091_mig_teacher_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405151315300_mig_coursevideo_add.resx">
+      <DependentUpon>202405151315300_mig_coursevideo_add.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

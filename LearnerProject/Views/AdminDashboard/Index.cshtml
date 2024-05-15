@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+<br />
+<h3>İstatistikler</h3>
+
+<!-- Sale & Revenue Start -->
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-graduation-cap fa-3x text-primary"></i>
+                <div class="ms-3">
+                    <p class="mb-2">Kurs Sayısı</p>
+                    <h6 class="mb-0">@ViewBag.v1</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-chart-bar fa-3x text-primary"></i>
+                <div class="ms-3">
+                    <p class="mb-2">Kategori Sayısı</p>
+                    <h6 class="mb-0">@ViewBag.v2</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-users fa-3x text-primary"></i>
+                <div class="ms-3">
+                    <p class="mb-2">Sınıf Sayısı</p>
+                    <h6 class="mb-0">@ViewBag.v3</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-user-circle fa-3x text-primary"></i>
+                <div class="ms-3">
+                    <p class="mb-2">Öğrenci Sayısı</p>
+                    <h6 class="mb-0">@ViewBag.v4</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-tag fa-3x text-primary"></i>
+                <div class="ms-3">
+                    <p class="mb-2">En Pahalı Kurs</p>
+                    <h6 class="mb-0">@ViewBag.v5</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-chart-bar fa-3x text-primary"></i>
+                <div class="ms-3">
+                    <p class="mb-2">Kodlama Kursları</p>
+                    <h6 class="mb-0">@ViewBag.v6</h6>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-star fa-3x text-primary"></i>
+                <div class="ms-3">
+                    <p class="mb-2">En Popüler Kurs</p>
+                    <h6 class="mb-0">@ViewBag.v7</h6>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Sale & Revenue End -->

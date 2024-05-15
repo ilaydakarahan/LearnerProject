@@ -509,10 +509,12 @@
     <Content Include="Views\TeacherLogin\Index.cshtml" />
     <Content Include="Views\TeacherCourse\AddCourse.cshtml" />
     <Content Include="Views\TeacherCourse\UpdateCourse.cshtml" />
+    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Default\DefaultCoursePartial.cshtml" />
+    <Content Include="Views\Default\CourseDetail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Default\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

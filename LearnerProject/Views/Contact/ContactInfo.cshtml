@@ -1,0 +1,36 @@
+﻿@model List<LearnerProject.Models.Entities.Contact>
+
+@foreach (var item in Model)
+{
+<div class="contact-info">
+
+    <div class="address mt-4">
+        <i class="icon-room"></i>
+        <h4 class="mb-2">Adres :</h4>
+        <p>@item.Address</p>
+    </div>
+
+    <div class="open-hours mt-4">
+        <i class="icon-clock-o"></i>
+        <h4 class="mb-2">İletişim Saatleri :</h4>
+        <p>
+            @item.OpenHours
+        </p>
+    </div>
+
+    <div class="email mt-4">
+        <i class="icon-envelope"></i>
+        <h4 class="mb-2">Email :</h4>
+        <p>@item.Email</p>
+    </div>
+
+    <div class="phone mt-4">
+        <i class="icon-phone"></i>
+        <h4 class="mb-2">Telefon :</h4>
+        <p>@item.Phone</p>
+    </div>
+
+</div>
+}
+
+

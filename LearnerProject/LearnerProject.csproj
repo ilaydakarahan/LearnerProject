@@ -131,8 +131,12 @@
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\AdminCourseController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\CourseRegisterController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\StudentLayoutController.cs" />
+    <Compile Include="Controllers\StudentLoginController.cs" />
     <Compile Include="Controllers\TeacherCourseController.cs" />
     <Compile Include="Controllers\TeacherLayoutController.cs" />
     <Compile Include="Controllers\TeacherLoginController.cs" />
@@ -156,16 +160,22 @@
     <Compile Include="Migrations\202405151315300_mig_coursevideo_add.designer.cs">
       <DependentUpon>202405151315300_mig_coursevideo_add.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202405161301406_mig_contact_message_add.cs" />
+    <Compile Include="Migrations\202405161301406_mig_contact_message_add.designer.cs">
+      <DependentUpon>202405161301406_mig_contact_message_add.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Context\LearnerContext.cs" />
     <Compile Include="Models\Entities\About.cs" />
     <Compile Include="Models\Entities\Banner.cs" />
     <Compile Include="Models\Entities\Category.cs" />
     <Compile Include="Models\Entities\Classroom.cs" />
+    <Compile Include="Models\Entities\Contact.cs" />
     <Compile Include="Models\Entities\Course.cs" />
     <Compile Include="Models\Entities\CourseRegister.cs" />
     <Compile Include="Models\Entities\CourseVideo.cs" />
     <Compile Include="Models\Entities\FAQ.cs" />
+    <Compile Include="Models\Entities\Message.cs" />
     <Compile Include="Models\Entities\Review.cs" />
     <Compile Include="Models\Entities\Student.cs" />
     <Compile Include="Models\Entities\Teacher.cs" />
@@ -512,6 +522,12 @@
     <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Views\Default\DefaultCoursePartial.cshtml" />
     <Content Include="Views\Default\CourseDetail.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Contact\ContactInfo.cshtml" />
+    <Content Include="Views\Contact\SendMessage.cshtml" />
+    <Content Include="Views\StudentLayout\Index.cshtml" />
+    <Content Include="Views\StudentLogin\Index.cshtml" />
+    <Content Include="Views\CourseRegister\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -555,6 +571,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202405151315300_mig_coursevideo_add.resx">
       <DependentUpon>202405151315300_mig_coursevideo_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405161301406_mig_contact_message_add.resx">
+      <DependentUpon>202405161301406_mig_contact_message_add.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

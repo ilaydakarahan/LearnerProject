@@ -133,10 +133,12 @@
     <Compile Include="Controllers\AdminCourseController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\CourseRegisterController.cs" />
+    <Compile Include="Controllers\StudentCourseController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StudentLayoutController.cs" />
     <Compile Include="Controllers\StudentLoginController.cs" />
+    <Compile Include="Controllers\StudentRegisterController.cs" />
     <Compile Include="Controllers\TeacherCourseController.cs" />
     <Compile Include="Controllers\TeacherLayoutController.cs" />
     <Compile Include="Controllers\TeacherLoginController.cs" />
@@ -528,9 +530,13 @@
     <Content Include="Views\StudentLayout\Index.cshtml" />
     <Content Include="Views\StudentLogin\Index.cshtml" />
     <Content Include="Views\CourseRegister\Index.cshtml" />
+    <Content Include="Views\StudentCourse\Index.cshtml" />
+    <Content Include="Views\StudentCourse\MyCourseList.cshtml" />
+    <Content Include="Views\StudentRegister\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Default1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

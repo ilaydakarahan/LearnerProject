@@ -1,0 +1,21 @@
+﻿@model LearnerProject.Models.Entities.CourseVideo
+@{
+    ViewBag.Title = "AddCourseVideo";
+    Layout = "~/Views/TeacherLayout/Index.cshtml";
+}
+<br />
+<h3>Kurs Ders Ekleme Sayfası</h3>
+
+<form method="post">
+    <label>Kurs Seç</label>
+    @Html.DropDownListFor(x=>x.CourseId, (List<SelectListItem>)ViewBag.course, "Seç", new {@class="form-control"})
+    <br />
+    <label>Video No</label>
+    @Html.TextBoxFor(x=>x.VideoNumber, new {@class="form-control"})
+    <br />
+    <label>Video Url</label>
+    @Html.TextBoxFor(x=>x.VideoUrl, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-outline-primary">Kaydet</button>
+</form>

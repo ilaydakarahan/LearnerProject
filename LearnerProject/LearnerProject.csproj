@@ -139,6 +139,7 @@
     <Compile Include="Controllers\StudentLayoutController.cs" />
     <Compile Include="Controllers\StudentLoginController.cs" />
     <Compile Include="Controllers\StudentRegisterController.cs" />
+    <Compile Include="Controllers\StudentReviewsController.cs" />
     <Compile Include="Controllers\TeacherCourseController.cs" />
     <Compile Include="Controllers\TeacherLayoutController.cs" />
     <Compile Include="Controllers\TeacherLoginController.cs" />
@@ -165,6 +166,10 @@
     <Compile Include="Migrations\202405161301406_mig_contact_message_add.cs" />
     <Compile Include="Migrations\202405161301406_mig_contact_message_add.designer.cs">
       <DependentUpon>202405161301406_mig_contact_message_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405201001388_mig_teacher_video_add.cs" />
+    <Compile Include="Migrations\202405201001388_mig_teacher_video_add.designer.cs">
+      <DependentUpon>202405201001388_mig_teacher_video_add.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Context\LearnerContext.cs" />
@@ -533,10 +538,17 @@
     <Content Include="Views\StudentCourse\Index.cshtml" />
     <Content Include="Views\StudentCourse\MyCourseList.cshtml" />
     <Content Include="Views\StudentRegister\Index.cshtml" />
+    <Content Include="Views\Default\DefaultTestimonialPartial.cshtml" />
+    <Content Include="Views\StudentReviews\AddReview.cshtml" />
+    <Content Include="Views\StudentReviews\Index.cshtml" />
+    <Content Include="Views\StudentReviews\UpdateReview.cshtml" />
+    <Content Include="Views\TeacherCourse\AddCourseVideo.cshtml" />
+    <Content Include="Views\TeacherCourse\CourseVideo.cshtml" />
+    <Content Include="Views\TeacherCourse\UpdateCourseVideo.cshtml" />
+    <Content Include="Views\Default\DefaultCategoryPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Default1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -580,6 +592,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202405161301406_mig_contact_message_add.resx">
       <DependentUpon>202405161301406_mig_contact_message_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405201001388_mig_teacher_video_add.resx">
+      <DependentUpon>202405201001388_mig_teacher_video_add.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

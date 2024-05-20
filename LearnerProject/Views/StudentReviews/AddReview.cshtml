@@ -1,0 +1,22 @@
+﻿@model LearnerProject.Models.Entities.Review
+@{
+    ViewBag.Title = "AddReview";
+    Layout = "~/Views/StudentLayout/Index.cshtml";
+}
+<br />
+<h3>Yorum Ekleme Sayfası</h3>
+
+<form method="post">
+    <label>Kurs Seçiniz</label>
+    @Html.DropDownListFor(x => x.CourseId, (List<SelectListItem>)ViewBag.course, "Kurs Seçin",
+    new { @class = "form-control" })
+    <br />
+    <label>Vereceğiniz Puan</label>
+    @Html.TextBoxFor(x=>x.ReviewValue, new {@class="form-control"})
+    <br />
+    <label>Yorum</label>
+    @Html.TextAreaFor(x=>x.Comment,5,1, new {@class="form-control"})
+    <br />
+
+    <button class="btn btn-outline-primary"> Kaydet</button>
+</form>

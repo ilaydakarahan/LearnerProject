@@ -1,0 +1,34 @@
+﻿@model List<LearnerProject.Models.Entities.Testimonial>
+
+<div class="untree_co-section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 text-center mx-auto">
+
+                <h3 class="line-bottom mb-4">Referanslar</h3>
+                <div class="owl-carousel wide-slider-testimonial">
+
+                    @foreach (var item in Model)
+                    {
+                        <div class="item">
+                            <blockquote class="block-testimonial">
+
+                                <p>
+                                    &ldquo; @item.Comment&rdquo;
+                                </p>
+                                <div class="author">
+                                    <img src="@item.ImageUrl" alt="Free template by TemplateUX">
+                                    <h3>@item.TestimonialName</h3>
+                                    <p class="position">@item.Title</p>
+                                </div>
+                            </blockquote>
+                        </div>
+                    }
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---->

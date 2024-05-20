@@ -1,0 +1,38 @@
+﻿@model List<LearnerProject.Models.Entities.Category>
+
+<div class="untree_co-section">
+    <div class="container">
+        <div class="row justify-content-center mb-3">
+            <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="0">
+                <h2 class="line-bottom text-center mb-4">Öne Çıkan Kategoriler</h2>
+            </div>
+        </div>
+        <div class="row align-items-stretch">
+            @foreach (var item in Model)
+            {
+                <div class="col-sm-6 col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="0">
+                    <a href="#" class="category d-flex align-items-start h-100">
+                        <div>
+                            <i class="@item.Icon"></i>
+                        </div>
+                        <div>
+                            <h3>@item.CategoryName</h3>
+                            <span>@ViewBag.courseCount video kurs</span>
+                        </div>
+                    </a>
+                </div>
+
+            }
+
+
+
+
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="400">
+            <div class="col-lg-8 text-center">
+                <p>Daha fazlası için <a href="#">Tıklayın</a></p>
+            </div>
+        </div>
+    </div>
+</div>

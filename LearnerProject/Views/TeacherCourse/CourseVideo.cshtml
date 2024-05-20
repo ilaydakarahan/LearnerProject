@@ -1,0 +1,33 @@
+﻿@model List<LearnerProject.Models.Entities.CourseVideo>
+@{
+    ViewBag.Title = "CourseVideo";
+    Layout = "~/Views/TeacherLayout/Index.cshtml";
+    int count = 0;
+}
+<br />
+<h3>Kurs Ders Sayfası</h3>
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>#</th>
+        <th>Kurs Adı</th>
+        <th>Video Numarası</th>
+        <th>Video Url</th>
+        <th>İşlemler</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <th>@count</th>
+            <td>@item.Course.CourseName</td>
+            <td>@item.VideoNumber</td>
+            <td>@item.VideoUrl</td>
+            <td>
+                <a href="/TeacherCourse/DeleteCourseVideo/@item.CourseVideoId" class="btn btn-outline-danger">Sil</a>
+                <a href="/TeacherCourse/UpdateCourseVideo/@item.CourseVideoId" class="btn btn-outline-info">Güncelle</a>
+            </td>
+        </tr>
+    }
+</table>
+
+<a href="/TeacherCourse/AddCourseVideo" class="btn btn-outline-primary">Kurs Ders Videosu Ekle</a>

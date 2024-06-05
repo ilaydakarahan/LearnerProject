@@ -10,7 +10,7 @@ Ayrıca kullanıcı mesaj gönderebilir.
 * :page_with_curl: **Kategori İşlemleri :** Yönetici anasayfada listelenen kategorileri listeleyebilir, yeni kategori ekleyebilir, düzenleyebilir ve silebilir.
 * :school: **Sınıf İşlemleri :** Yönetici anasayfada sınıfları tercih edilme oranlarına göre listeleyebilir, yeni sınıf ekleyebilir, düzenleyebilir ve silebilir.
 * :books: **Kurs İşlemleri :** Yönetici anasayfada eklenme tarihine göre kursları listeleyebilir; yeni kurs ekleyebilir, düzenleyebilir ve silebilir.
-* :grey_exclamation: :grey_exclamation: **Hakkımızda İşlemleri :**
+* :grey_exclamation: :grey_exclamation: **Hakkımızda İşlemleri :** Yönetici hakkımda kısmını düzenleyebilir ve silebilir.
 
 ### 2-Öğrenci Rolü
 ---
